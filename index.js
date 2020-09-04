@@ -51,20 +51,20 @@ var stevequotes = [
   "My name is Dr. Roboto -Steven Michael Pape to some random 6th grader",
   "I wish there was something I could do -Steven Michael Pape when asked to do literally anything",
   "I don't make up the rules, I just enforce them -Steven Michael Pape, making up the rules",
-  "Please put your chromebooks in the correct slot -Steve Pape, 2019",
-  "Hello, have you plugged in your chromebook? -Steve Pape, 2019",
-  "This is the third time you've left your chromebook out... should we brainstorm a plan to fix that? -Steve Pape, 2019",
-  "Your chromebook is in my office. -Steve Pape, 2019",
-  "Did you plug in your chromebook? -Steve Pape, 2019",
-  "What is that on your other tab? -Steve Pape, 2019",
-  "We have GREAT news! *pauses dramatically*... Everyone's chromebook was plugged in! -Steve Pape, 2020",
+  "Please put your chromebooks in the correct slot -Steven Michael Pape, 2019",
+  "Hello, have you plugged in your chromebook? -Steven Michael Pape, 2019",
+  "This is the third time you've left your chromebook out... should we brainstorm a plan to fix that? -Steven Michael Pape, 2019",
+  "Your chromebook is in my office. -Steven Michael Pape, 2019",
+  "Did you plug in your chromebook? -Steven Michael Pape, 2019",
+  "What is that on your other tab? -Steven Michael Pape, 2019",
+  "We have GREAT news! *pauses dramatically*... Everyone's chromebook was plugged in! -Steven Michael Pape, 2020",
   "Who's Steve? - Steven Michael Pape pretending to be Dr. Roboto to any sixth grader.",
   "Beards are cool!",
   "Come see me in my office - Steven Michael Pape when he has (stolen) your chromebook."
 ]
 
 var dalequotes = [
-  "I know you two like each other but you need to focus -Dale rawls",
+  "I know you two like each other but you need to focus -Dale Rawls",
   "Thats cooler than cats feet -Dale Rawls",
   "I will give you each one sheet of italian shading paper. It's very expensive. -Dale Rawls",
   "Paper is cheap but good ideas are hard to come by. -Dale Rawls"
@@ -130,7 +130,7 @@ client.on("message", msg => {
   
   if (command.startsWith("schedule")) {
 
-    msg.reply("This is the schedule link thing: https://drive.google.com/file/d/1J7SuChmGYHM1gmTcf2p7aiBjgyFeeNmN/view. You can view your class schedile at https://portals.veracross.com/catlin/student/student/daily-schedule if you are logged in.")
+    msg.reply("This is the schedule link thing: https://inside.catlin.edu/schedule/. You can view your class schedile at https://portals.veracross.com/catlin/student/student/daily-schedule if you are logged in.")
   }
 
   if (command === ("dale")) {
