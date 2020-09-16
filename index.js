@@ -176,6 +176,10 @@ client.on("message", msg => {
   if (command == 'meme') {
     meme(msg);
   }
+// steve chatbot 
+  if (command.startsWith('complain')) {
+    msg.reply("I'm sorry, there's nothing I can do.");
+  }
 
 })
 
