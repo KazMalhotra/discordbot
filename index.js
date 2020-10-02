@@ -87,32 +87,32 @@ client.on("message", msg => {
   var command = args.shift().toLowerCase();
 
   //steve quoter 2000
-  if (command == "quotes") {
+  if (command === ("quotes")) {
     msg.channel.send("Steve's quotes:")
     msg.channel.send(stevequotes)
     msg.channel.send("Dale's quotes:")
     msg.channel.send(dalequotes)
   }
-  if (command == "quotes-raw") {
+  if (command === ("quotes-raw")) {
     msg.channel.send(quotes)
   }
 
-  if (command == "status") {
+  if (command === ("status")) {
     msg.channel.send("Operational")
     console.log(msg.author)
     console.log(msg.author.username)
 
   }
 
-  if (command == ("steve")) {
+  if (command === ("steve")) {
     msg.reply(stevequotes[Math.floor(Math.random() * stevequotes.length)])
   }
 
-  if (command == ("quote")) {
+  if (command === ("quote")) {
     msg.channel.send(stevequotes[Math.floor(Math.random() * stevequotes.length)])
   }
 
-  if (command == ("commands")) {
+  if (command === ("commands")) {
     msg.channel.send("Try commands like 'steve', 'quote', 'lecture', 'dale', 'repeat', 'roll', and 'meme'")
   }
 
@@ -130,12 +130,12 @@ client.on("message", msg => {
     msg.reply("This is the schedule link thing: https://inside.catlin.edu/schedule/. You can view your class schedile at https://portals.veracross.com/catlin/student/student/daily-schedule if you are logged in.")
   }
 
-  if (command == ("dale")) {
+  if (command === ("dale")) {
 
     msg.reply(dalequotes[Math.floor(Math.random() * dalequotes.length)])
   }
 
-  if (command == ("quotes-dale")) {
+  if (command === ("quotes-dale")) {
     msg.reply(dalequotes)
   }
 
@@ -147,21 +147,21 @@ client.on("message", msg => {
 
   }
 
-  if (command == 'args') {
+  if (command === ("args")) {
     if (!args.length) {
       return msg.channel.send("Please provide arguments", msg.author);
     }
     msg.channel.send(`Command name: ${command}\nArguments: ${args}`);
   }
 
-  if (command == 'repeat') {
+  if (command === ("repeat")) {
     if (!args.length) {
       msg.channel.send("What should I repeat", msg.author);
     }
     msg.channel.send(args);
   }
 
-  if (command == 'roll') {
+  if (command === ("roll")) {
     if (!args.length) {
       msg.channel.send(Math.floor(Math.random() * 6 + 1))
     }
@@ -170,7 +170,7 @@ client.on("message", msg => {
 
     }
   }
-  if (command == 'meme') {
+  if (command === ("meme")) {
     meme(msg);
   }
 // steve chatbot 
@@ -178,7 +178,7 @@ client.on("message", msg => {
     msg.reply("I'm sorry, there's nothing I can do.");
   }
   //added other random stuff to command
-  if(command == "cat" || command == "CatFact" || command == "catfacts" || command == "dog" || command == "cf"){
+  if(command === "cat" || command === "CatFact" || command === "catfacts" || command === "dog" || command === "cf"){
     sleep(200)
     msg.reply("citation needed")
     msg.reply("https://imgs.xkcd.com/comics/wikipedian_protester.png")
