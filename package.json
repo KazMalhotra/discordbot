@@ -16,7 +16,7 @@
     "package.json": "^2.0.1",
     "random-puppy": "^1.1.0",
     "snekfetch": "^4.0.4",
-    "got": "^8.3.1",
+    "got": "^8.3.1"
   },
   "devDependencies": {
     "nodemon": "2.0.4"
