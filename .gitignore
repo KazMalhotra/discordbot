@@ -1,3 +1,4 @@
+#If not using intelliJ editor remove all of this except the last 2 lines
 app-env
 
 
@@ -93,3 +94,6 @@ fabric.properties
 .idea/**/markdown-navigator/
 
 # End of https://www.gitignore.io/api/intellij
+
+#start of ignoring node_modules as it is not needed
+node_modules
